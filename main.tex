@@ -1,0 +1,53 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel}
+\usepackage{cn-reports}
+\usepackage{geometry}
+\geometry{a4paper,top=2cm,bottom=2cm,left=1.75cm,right=1.75cm}
+\usepackage{setspace}
+\onehalfspacing
+% here insert your favorite packages
+% graphicx and hyperref already loaded in cn-reports.sty as they are needed 
+\usepackage{lipsum}
+
+% bibliography -> modify as you want
+\usepackage{lineno}
+\usepackage{csquotes}
+\usepackage[natbib=true, 
+            style=phys, 
+            sorting=nyt,
+            maxnames=1, 
+            uniquename=false,
+            uniquelist=false,
+            defernumbers=true, 
+            articletitle=false,
+            eprint=true,
+            citestyle=authoryear]{biblatex}
+%\addbibresource{your_bibfile.bib}
+
+% titlepage
+\title{Spoke 2 -WP3} 
+
+\author[a]{Author}
+
+\affiliation[a]{Centro Nazionale HPC}
+
+% E-mail addresses: only for the corresponding authors
+\emailAdd{nome.cognome@inaf.it}
+
+\begin{document}
+\maketitle
+%% ------------------------------------------------------------
+\begin{abstract}
+\lipsum[1]
+
+\end{abstract}
+\begin{keywords}
+Spoke2 -WP3.
+\end{keywords}
+%% ------------------------------------------------------------
+\section{Introduction} 
+
+\lipsum[2-4]
+%\printbibliography[omitnumbers=true]
+
+\end{document}
